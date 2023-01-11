@@ -96,15 +96,22 @@ header {
         flex-direction: row;
     }
 }
-
-/* Your code here */
-
-/* ----- Phase 1 - Wide Screen ----- */
-
-/* Your code here */
-
-/* ===== PRINTING ===== */
-
-/* Phase 2 */
-
-/* Your code here */
+@media print {
+   .header{ 
+    display: flex;
+}
+.sidebar{
+    display: none;
+}
+header{
+    display: none;
+}
+.image-box{
+    display: none;
+}
+.story-box {
+    border-radius: 0;
+    background-color: white;
+    filter: none;
+}
+}
